@@ -411,7 +411,7 @@ a{
     height: 50px;
     border: 1px solid rgb(247, 243, 243);
     border-radius: 7px;
-    padding: 5px;
+    padding: 5px 20px;
    
 }
 
@@ -689,7 +689,7 @@ padding: 70px 0px;
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    width: 30%;
+    /* width: 30%; */
 }
 .job-header-text p{
     line-height: 26px;
@@ -757,9 +757,7 @@ padding: 70px 0px;
 
 
 @media  screen and (max-width: 1200px) and (min-width:992px){
-    .job-header-text{
-        width: 100%;
-    }
+  
     .jobs-header{
         display: flex;
         flex-direction: column;
@@ -768,15 +766,20 @@ padding: 70px 0px;
 
 
    .job{
-    width:32% ;
+    width:47% ;
    }
-    
+   .job-header-text{
+    width: 100%;
+    text-align: center;
+}
+  
+.explore{
+    margin: auto;
+}
+
 }
 @media  screen and (max-width: 992px) and (min-width:786px){
-   
-    .job-header-text{
-        width: 100%;
-    }
+  
     .jobs-header{
         display: flex;
         flex-direction: column;
@@ -788,15 +791,19 @@ padding: 70px 0px;
     width:47% ;
    }
     
-
+   .job-header-text{
+    width: 100%;
+    text-align: center;
+}
+  
+.explore{
+    margin: auto;
+}
    
    
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
     
-    .job-header-text{
-        width: 100%;
-    }
     .jobs-header{
         display: flex;
         flex-direction: column;
@@ -807,15 +814,20 @@ padding: 70px 0px;
    .job{
     width:47% ;
    }
-    
+   .job-header-text{
+    width: 100%;
+    text-align: center;
+}
+  
+.explore{
+    margin: auto;
+}
    
 
 }
 @media  screen and (max-width: 600px){
 
-    .job-header-text{
-        width: 100%;
-    }
+  
     .jobs-header{
         display: flex;
         flex-direction: column;
@@ -826,6 +838,15 @@ padding: 70px 0px;
    .job{
     width:100% ;
    }
+   .job-header-text{
+    width: 100%;
+    text-align: center;
+}
+  
+.explore{
+    margin: auto;
+}
+
     
   
 
@@ -1072,7 +1093,7 @@ bottom: 100px;
     display: flex;
     flex-direction: column;
     row-gap: 16px;
-    width: 25%;
+    /* width: 25%; */
 }
 .featured-header-text p{
     line-height: 26px;
