@@ -467,7 +467,10 @@ a{
         width: 70%;
         margin: auto;
     }
+    .main-img{
    
+        height: auto;
+    }
 }
 @media  screen and (max-width: 992px) and (min-width:786px){
    
@@ -495,7 +498,10 @@ a{
         width: 70%;
         margin: auto;
     }
+    .main-img{
    
+        height: auto;
+    }
    
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
@@ -523,7 +529,10 @@ a{
         width: 70%;
         margin: auto;
     }
+    .main-img{
    
+        height: auto;
+    }
 
 }
 @media  screen and (max-width: 600px){
@@ -555,7 +564,10 @@ a{
         font-size: 32px;
     }    
     
-  
+    .main-img{
+   
+        height: auto;
+    }
 
 }
 
