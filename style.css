@@ -52,7 +52,7 @@ nav{
    
    
 }
-.nav-list ul{
+.nav-list .inner-list ul{
     list-style-type: none;
     display: flex;
     width: 50%;
@@ -62,9 +62,17 @@ nav{
 
 .nav-list{
     width: 70%;
-    display: flex;
-    justify-content: space-between;
+
 }
+
+.inner-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
 .nav .icon{
     display: none;
     font-size: 28px;
@@ -106,7 +114,7 @@ a{
  
     
     }
-    .nav-list ul{
+    .nav-list .inner-list ul{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -114,6 +122,11 @@ a{
         row-gap: 32px;
         margin: auto;
       
+    }
+    .inner-list{
+        display: flex;
+        flex-direction: column;
+        
     }
     .nav-list{
         display: none;
@@ -146,8 +159,7 @@ a{
         
     
     }
-  
-    
+ 
     
     .nav-list li{
         font-size: 16px;
@@ -174,8 +186,7 @@ a{
     }
     
    
-   
-   
+  
 
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
@@ -190,7 +201,7 @@ a{
  
     
     }
-    .nav-list ul{
+    .nav-list .inner-list ul{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -198,6 +209,11 @@ a{
         row-gap: 32px;
         margin: auto;
       
+    }
+    .inner-list{
+        display: flex;
+        flex-direction: column;
+        
     }
     .nav-list{
         display: none;
@@ -230,8 +246,7 @@ a{
         
     
     }
-  
-    
+ 
     
     .nav-list li{
         font-size: 16px;
@@ -256,6 +271,9 @@ a{
         font-size: 20px;
         font-weight: 700;
     }
+    
+   
+  
     
    
 
@@ -273,7 +291,7 @@ a{
  
     
     }
-    .nav-list ul{
+    .nav-list .inner-list ul{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -281,6 +299,11 @@ a{
         row-gap: 32px;
         margin: auto;
       
+    }
+    .inner-list{
+        display: flex;
+        flex-direction: column;
+        
     }
     .nav-list{
         display: none;
@@ -666,13 +689,15 @@ padding: 70px 0px;
     width: 75%;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
+    column-gap: 28px;
     flex-wrap: wrap;
     row-gap: 50px;
     
 }
 .job{
-    width: 24%;
+    width: 28%;
     padding: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -704,7 +729,7 @@ padding: 70px 0px;
     color: rgb(255, 255, 255);
 }
 .jobs-header{
-    width: 75%;
+    width: 65%;
     margin: auto;
     color: rgb(255, 255, 255);
     display: flex;
@@ -1021,10 +1046,13 @@ bottom: 100px;
 }
 .featured-jobs-container{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
+    column-gap: 28px;
 }
 .featured-header{
     display: flex ;
+    width: 61%;
+    margin: auto;
     justify-content: space-between;
 }
 
@@ -1210,7 +1238,9 @@ bottom: 100px;
     width: 75%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
+    column-gap: 32px;
     
 }
 .new{
@@ -1354,6 +1384,7 @@ row-gap: 40px;
     border: 1px solid rgb(247, 243, 243);
     border-radius: 10px;
     row-gap: 16px;
+    justify-content: space-between;
 
 }
 .update-header{
@@ -1366,14 +1397,14 @@ row-gap: 40px;
     font-size: 36px;
 }
 .update-form input{
-    width: 80%;
+    width: 60%;
   
     margin: auto;
     height: 50px;
     /* border: 1px solid rgb(247, 243, 243); */
     border: none;
     border-radius: 7px;
-    padding: 5px;
+    padding: 5px 20px;
 }
 .update-form button{
     width: 170px;
@@ -1395,16 +1426,8 @@ row-gap: 40px;
         width: 100%;
     }
     .update-form{
-        width: 100%;
-    }
-
-}
-@media  screen and (max-width: 992px) and (min-width:786px){
-    .update-container{
-        width: 100%;
-    }
-    .update-form{
-        width: 100%;
+        width: 80%;
+        margin: auto;
         padding: 16px 0px;
         display: flex;
         flex-direction: column;
@@ -1414,6 +1437,35 @@ row-gap: 40px;
         width: 80%;
         margin: auto;
     }
+    .update-form input{
+        width: 80%;
+        margin: auto;
+    }
+
+
+
+}
+@media  screen and (max-width: 992px) and (min-width:786px){
+    .update-container{
+        width: 100%;
+    }
+    .update-form{
+        width: 80%;
+        margin: auto;
+        padding: 16px 0px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    .update-form button{
+        width: 80%;
+        margin: auto;
+    }
+    .update-form input{
+        width: 80%;
+        margin: auto;
+    }
+
 
 }
 @media  screen and (max-width: 786px) and (min-width:600px) {
@@ -1422,7 +1474,8 @@ row-gap: 40px;
         width: 100%;
     }
     .update-form{
-        width: 100%;
+        width: 80%;
+        margin: auto;
         padding: 16px 0px;
         display: flex;
         flex-direction: column;
@@ -1432,6 +1485,11 @@ row-gap: 40px;
         width: 80%;
         margin: auto;
     }
+    .update-form input{
+        width: 80%;
+        margin: auto;
+    }
+
 }
 @media  screen and (max-width: 600px){
 
@@ -1446,6 +1504,10 @@ row-gap: 40px;
         row-gap: 32px;
     }
     .update-form button{
+        width: 80%;
+        margin: auto;
+    }
+    .update-form input{
         width: 80%;
         margin: auto;
     }
